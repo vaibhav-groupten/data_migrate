@@ -1,0 +1,27 @@
+id: data_user
+migration_group: data
+migration_tags:
+  - Drupal 6
+migration_tags: {}
+label: Data User
+
+source:
+  plugin: d6_user
+
+destination:
+  plugin: entity:user
+
+process:
+  name: name
+  pass: pass
+  mail: mail
+  created: created
+  access: access
+  login: login
+  status: status
+  timezone: timezone
+migration_dependencies: {}
+
+dependencies:
+  module:
+    - data_migrate
