@@ -1,0 +1,12 @@
+name: Data Migrate
+type: module
+description: Migrations for D6 to D8 site upgrade.
+package: custom
+core: 8.x
+dependencies:
+  - migrate_drupal
+  - migrate_plus
+  - migrate_tools
+config_devel:
+ install:
+   - migrate_plus.migration.data_user
